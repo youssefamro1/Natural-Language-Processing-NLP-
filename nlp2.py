@@ -29,10 +29,6 @@ x=massage.apply(lambda x: remove_panc(x))
 x=x.apply(lambda x: tokenize(x.lower()))
 #y=x.apply(lambda c: remove_stops(c))
 
-ps = PorterStemmer()
-x = [ps.stem(word) for word in x if not word in set(stopwords.words('english'))]
-
-
 
 
 
